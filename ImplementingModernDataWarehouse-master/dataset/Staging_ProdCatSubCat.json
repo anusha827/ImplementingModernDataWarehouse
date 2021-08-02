@@ -1,0 +1,43 @@
+{
+	"name": "Staging_ProdCatSubCat",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStaging",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ADLS_Staging"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Product-Category-Subcategory.csv",
+				"fileSystem": "staging"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "prod_cat_code",
+				"type": "String"
+			},
+			{
+				"name": "prod_cat",
+				"type": "String"
+			},
+			{
+				"name": "prod_sub_cat_code",
+				"type": "String"
+			},
+			{
+				"name": "prod_subcat",
+				"type": "String"
+			}
+		]
+	}
+}

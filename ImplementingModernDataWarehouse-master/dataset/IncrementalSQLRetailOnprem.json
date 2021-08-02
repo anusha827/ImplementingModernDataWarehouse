@@ -1,0 +1,27 @@
+{
+	"name": "IncrementalSQLRetailOnprem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnPremSqlServerDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "String"
+			}
+		},
+		"folder": {
+			"name": "OnPremTables"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	}
+}
