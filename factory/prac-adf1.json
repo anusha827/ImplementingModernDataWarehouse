@@ -1,9 +1,0 @@
-{
-	"name": "prac-adf1",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "643d191c-1d0a-4df8-b064-797f16df73e7",
-		"tenantId": "a7ca1a43-f9a5-4296-8b05-877c2168da45"
-	}
-}
